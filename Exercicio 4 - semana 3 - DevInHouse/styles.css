@@ -62,7 +62,7 @@ header{
     font-weight: 500;
     color: #fff!important;
     padding: 0.5rem 2rem;
-    text-align: center
+    text-align: center;
     transition: .07s;
     text-decoration-line: none;
 }
@@ -145,7 +145,7 @@ header{
 
 .priceContainer{
     display: flex;
-    margin-left:  ;
+    margin-left:;
     margin: 20px 0;
     padding-bottom: 20px;
     justify-content: space-between; 
@@ -358,4 +358,14 @@ main{
 .video iframe{
     margin-top: 50px;
     
+}
+#4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input4{
+    margin-top: 150px;
+    margin-left: 800px;
 }
