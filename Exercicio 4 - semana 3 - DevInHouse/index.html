@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Exercicio 10</title>
+    <script src="https://kit.fontawesome.com/9497cd1c72.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div  class="headerContainer">
+            <div class="logo">
+                <i class="fa-solid fa-shop"></i>
+            </div>
+            <nav class="navBar">
+
+                <ul>
+                    <li >
+                        <a class="homeBtn" type="button" onclick="mostraDiv(1)">Home</a>
+                    </li>
+                    <li class="btnGalery" type="button" onclick="mostraDiv(2)">
+                        <a>Galery</a>
+                    </li>
+                    <li>
+                        <a class="btnVideo" type="button" onclick="mostraDiv(3)" >Videos</a>
+                    </li>
+                    <li>
+                        <a>Help</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="./index.html"><i class="fa-solid fa-cart-shopping"></i> Your Cart</a>
+            </div>
+        </div>
+
+    </header>
+    <div id="1" class="hidden">
+        <div class="pageWrap">
+            <div class="productWrapper">
+                <div class="productImg">
+                    <div class="img">
+                        <img class="carouselImg" src="./images/prod.png">
+                        <img class="carouselImg" src="./images/prod.png">
+                        <img class="carouselImg" src="./images/prod.png">
+                    </div>
+                </div>
+                <div class="productDetails">
+                    <div class="title">
+                        <h1>Product Title</h1>
+                    </div>
+                    <div class="review">
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <span>5 Reviews</span>
+                    </div>
+                    <div class="priceContainer">
+                        <div class="price">
+                            <h2>$ 1223</h2>
+                        </div>
+                        <div class="select">
+                            <select>
+                                <option value="" disabled selected>Select Model</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <div class="division">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="cart">
+                            <a href="./index.html">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="similarProdConteiner">
+                <h1>Similar Products</h1>
+            </div>
+            <div class="similarProdConteiner2">
+                <div class="similarProd">
+                    <div class="similarImg">
+                        <img src="./images/prod.png">
+                    </div>
+                    <div class="similarDetails">
+                        <p>Product Name</p>
+                        <div class="prodSimilarDetails">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                            
+                        </div><p>$1245</p>
+                    </div>
+                </div>
+                <div class="similarProd">
+                    <div class="similarImg">
+                        <img src="./images/prod.png">
+                    </div>
+                    <div class="similarDetails">
+                        <p>Product Name</p>
+                        <div class="prodSimilarDetails">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                           
+                        </div> 
+                        <p>$1245</p>
+                    </div>
+                </div>
+                <div class="similarProd">
+                    <div class="similarImg">
+                        <img src="./images/prod.png">
+                    </div>
+                    <div class="similarDetails">
+                        <p>Product Name</p>
+                        <div class="prodSimilarDetails">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                        <p>$1245</p>
+                    </div>
+                </div>
+            </div>
+            <div class="comentSection">
+                <h1>Reviews</h1>
+                <div class="comentContainer">
+                    <div class="usr">
+                        <div class="usrImg">
+                            <img src="./images/avatar.png">
+                        </div>
+                        <div class="usrDetail">
+                            <h3>User</h3>
+                            <p>Friday 17, 2022</p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="comentContainer">
+                    <div class="usr">
+                        <div class="usrImg">
+                            <img src="./images/avatar.png">
+                        </div>
+                        <div class="usrDetail">
+                            <h3>User</h3>
+                            <p>Friday 17, 2022</p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="comentContainer">
+                    <div class="usr">
+                        <div class="usrImg">
+                            <img src="./images/avatar.png">
+                        </div>
+                        <div class="usrDetail">
+                            <h3>User</h3>
+                            <p>Friday 17, 2022</p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="comentContainer">
+                    <div class="usr">
+                        <div class="usrImg">
+                            <img src="./images/avatar.png">
+                        </div>
+                        <div class="usrDetail">
+                            <h3>User</h3>
+                            <p>Friday 17, 2022</p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                </div>
+                
+                
+            </div> 
+        </div>  
+    </div>
+   
+    <section id="2" class="hidden">
+        <main>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./images/ricky_profile.jpg" alt="RickyProfile">
+                </div>
+            </div>     
+        </main>
+    </section>
+    <div id="3" class="hidden">
+        <div class="main">
+            <h1>DEVinHouse Masterclass</h1>
+            <p>Participe da nossa Aula Magna com o Dev e Criador de conteúdo Lucas Montano, onde vamos falar de carreira, dicas, aplicações e mercado de tecnologia.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VfKrzRZVxgQ" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer class="footerContainer">
+        
+    </footer> 
+
+    <script src="./script.js"></script>
+</body>
+</html>

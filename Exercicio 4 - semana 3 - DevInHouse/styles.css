@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #e3e4e9 no-repeat left top fixed
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    border: 0; 
+    padding: 0;
+    /**background-color: rgba(221, 221, 221, 0.918);**/
+    background: rgb(57,57,57);
+    color: #fff!important;
+    z-index: +1; 
+    
+}
+
+.headerContainer{
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navBar {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navBar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    flex-wrap: wrap ;
+}
+
+.navBar ul li a{
+    margin: 3rem;
+    ;
+}
+
+.cart{
+    margin-right: 10px;
+}
+
+.cart a{
+    height: 10px;
+    border-radius: 2px;
+    background-color: #c9c9c9;
+    border: 0;
+    box-shadow: inset 1px 1px 0 rgb(190, 190, 190), 0 2px 3px rgb(0 0 0 / 40%);
+    font-weight: 500;
+    color: #fff!important;
+    padding: 0.5rem 2rem;
+    text-align: center
+    transition: .07s;
+    text-decoration-line: none;
+}
+
+.cart a:hover{
+    background-color: rgb(130, 149, 230);
+}
+
+.pageWrap{
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+    max-width: 1200px;
+    padding-top: 68px;
+}
+
+.productWrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productImg{
+    width: 600px;
+    height: autopx;
+    border: 1px solid rgb(196, 196, 196);
+    padding: 10px;
+    background-color: #fff;
+}
+
+.img{
+   
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/galery.jpg');
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.img img{
+    width: 150px;
+    height: 120px;
+    margin-bottom: 2rem;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 0 rgb(190, 190, 190), 0 2px 3px rgb(0 0 0 / 40%)
+}
+
+.carousel{
+    width: 100%;
+
+}
+
+.carousel img{
+    width: 100px;
+}
+
+.productDetails{
+    width: 600px;
+    height: auto;
+    background-color: #fff;
+    padding: 25px 45px;
+    border-bottom: 1px solid rgb(218, 216, 216);
+}
+
+.review{
+    display: flex;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(218, 216, 216);
+    margin-top: 10px;
+}
+
+.review span{
+    padding-right: 3rem;
+    margin-top: 5px;
+    align-items: baseline;
+}
+
+.priceContainer{
+    display: flex;
+    margin-left:  ;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    justify-content: space-between; 
+    border-bottom: 1px solid rgb(218, 216, 216); ;  
+}
+
+.select select{
+    border: none;
+    background-color: #c9c9c9;
+    height: 30px;
+    width: 150px;
+    color: #fff;
+    box-shadow: inset 1px 1px 0 rgb(190, 190, 190), 0 2px 3px rgb(0 0 0 / 40%);
+    cursor: pointer;
+}
+
+.select select::after{
+    background-color: rgb(198, 201, 214);
+    cursor: pointer;
+}
+
+.description{
+    line-height: 1.6;
+}
+
+.description p{
+    margin-bottom: 20px;
+}
+
+.description hr{
+    width: 33%;
+    border: 1px solid rgb(218, 216, 216);
+}
+
+.button{
+    display:flex;
+    align-items: center;
+    margin: 35px 0 20px 0;
+}
+
+.similarProdConteiner{
+    whidt:100%;
+    
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.similarProdConteiner h1{
+    margin-top: 20px;
+    font-weight: 100;
+    font-style: italic;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.similarProdConteiner2{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(218, 216, 216);
+    margin-bottom: 30pxpx;
+
+}
+
+.similarImg img{
+    width: 150px;
+    height: 100px;
+    margin-bottom: 3rem;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 0 rgb(190, 190, 190), 0 2px 3px rgb(0 0 0 / 40%);
+    margin-right: 20px;
+}
+
+
+.similarProd{
+    width: 30%;
+    display: flex;
+    font-weight: 100;
+    margin-left: 30px;
+}
+.similarDetails p{
+    margin-bottom: 15px;
+}
+
+.comentSection{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    
+}
+
+.comentSection h1{
+    margin-left: 35px;
+    padding-top: 20px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.usr{
+    display: flex;
+    margin: 30px 80px 30px 20px;
+    align-items: center;
+    
+}
+
+.usrImg img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 15px; 
+}
+
+.usrDetail{
+    width: 15%;
+    margin-left: 15px;
+    margin-right: 100px;
+    flex-grow: ;
+
+}
+
+.usrDetail p{
+    margin-bottom: 7px;
+}
+
+.usrDetail h3{
+    margin-bottom: 7px;
+}
+
+.comment{
+    width: 50%;
+}
+
+.comentContainer hr{
+    width: 15%;
+    border: 1px solid rgb(218, 216, 216);
+    margin-left: 150px;
+}
+
+.footerContainer{
+
+        width: 100%;
+        height: 60px;
+        position: fixed!important;
+        
+        bottom: 0;
+        padding: 0;
+        /**background-color: rgba(221, 221, 221, 0.918);**/
+        background: rgb(57,57,57);
+        color: #fff!important;
+        z-index: +1; 
+        margin-bottom: 0;
+    
+}
+
+
+main{
+    margin-top: 25px;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+
+}
+.container{
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    background-color: #ffffff10;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    margin: 20px 20px 80px 20px;
+
+}
+
+.card{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card img{
+    width: 90%;
+    height: auto;
+    margin: 20px 10px;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+.video{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 100px;
+    line-height: 3;
+
+}
+.video iframe{
+    margin-top: 50px;
+    
+}
