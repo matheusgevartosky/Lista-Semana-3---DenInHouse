@@ -1,0 +1,27 @@
+main{
+    max-width: 1070px;
+    margin: auto;
+}
+header{
+    display:flex;
+    justify-content: center;
+}
+#galery{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imgContainer{
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+
+}
+.img{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%
+}
