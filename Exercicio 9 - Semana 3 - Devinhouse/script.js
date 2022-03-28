@@ -1,25 +1,34 @@
 
-let nomes = ['Matheus', "Ketlin", "Jorge"]
+let nomes = ['Matheus', "Ketlin", "Jorge", 'Clayton', 'Vinicius']
+
+
+fetchNome('Brisa')
 
 function fetchNome(nome) {
-  const API = "https://servicodados.ibge.gov.br/api/v2/censos/nomes/" + nome;
+    const API = "https://servicodados.ibge.gov.br/api/v2/censos/nomes/" + nome;
+    fetch(API)
+        .then(function (rawData) {
+            return rawData.json();
+        })
+        .then(function (json) {
+            let returnData = json[0].res;
+            console.log(returnData)
+            var periodoDinamico = [];
+            var frequenciaDinamica = []; 
+            console.log(frequenciaDinamica, periodoDinamico)
+            
 
-  fetch(API)
-    .then(function (rawData) {
-      return rawData.json();
-    })
-    .then(function (json) {
-      let returnData = json[0].res;
-      let labelsDinamicas = [];
-      let dadosDinamicos = [];
-
-      for (let index of returnData) {
-        labelsDinamicas.push(index.periodo);
-        dadosDinamicos.push(index.frequencia);
-      }
-      geraGráfico(labelsDinamicas, dadosDinamicos, "matheus ");
-    });
+            for(let data of returnData){
+                periodoDinamico.push(data.periodo) 
+                frequenciaDinamica.push(data.frequencia) 
+            }
+            
+            geraGráfico(periodoDinamico, frequenciaDinamica, json[0].nome)
+        });
 }
+ 
+
+
 function geraGráfico(labelsDinamicas, dadosDinamicos, nomeDinamico) {
     const data = {
         labels: labelsDinamicas,
@@ -43,10 +52,7 @@ function geraGráfico(labelsDinamicas, dadosDinamicos, nomeDinamico) {
     );
 }
 
-
-setInterval(function(){
-    
-
-}, 5000;
-
-
+/*for(const nome of nomes){
+    fetchNome(nome)
+    geraGráfico(labelsDinamicas, dadosDinamicos, nome)
+}*/
