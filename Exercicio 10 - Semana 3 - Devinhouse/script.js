@@ -5,8 +5,8 @@ const dados = [];
 document.getElementById("dataEntry").addEventListener("submit", (event) => {
   event.preventDefault();
   let colors = document.getElementById("color").value;
-  console.log(colors);
-  let timer = document.getElementById("number").value;
+
+  let timer = parent(document.getElementById("number").value);
 
   const data = {
     corDeFundo: colors,
@@ -20,12 +20,15 @@ document.getElementById("dataEntry").addEventListener("submit", (event) => {
 
 const getData = localStorage.getItem('data')
 if(getData != null) {
-    let obj = JSON.parse(getData)
+    var obj = JSON.parse(getData)
     console.log(obj)
 }
 
 function changeColor(color){
-    document.body.style.background = cor;
+    document.body.style.background = color;
 }
 
+setInterval(() => {
+    changeColor(obj[0].corDeFundo)
+}, obj[0].timer);
 
